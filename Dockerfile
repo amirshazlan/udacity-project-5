@@ -6,7 +6,7 @@ WORKDIR /app
 
 ## Step 2:
 # Copy source code to working directory
-COPY . /app
+COPY . app.py /app
 COPY model_data /app/model_data
 
 ## Step 3:
@@ -21,6 +21,5 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
-
 CMD ["python","app.py"]
 
